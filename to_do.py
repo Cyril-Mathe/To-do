@@ -32,7 +32,7 @@ def modifier_statut_todo():
                 case "1" : liste
             l.append(choice)
             liste.remove(choice)
-            print("A fair ", l)
+            print("A faire ", l)
             print("Fait ", liste)
             print("erorr")
 
