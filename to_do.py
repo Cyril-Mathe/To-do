@@ -34,7 +34,6 @@ def modifier_statut_todo():
             liste.remove(choice)
             print("A faire ", l)
             print("Fait ", liste)
-            print("erorr")
 
 def supprimer_todo():
     print("lequel voulez vous supprimez ?")
