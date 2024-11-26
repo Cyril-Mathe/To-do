@@ -9,7 +9,7 @@ def creer_todo():
     l.append(input())
 
 def modifier_statut_todo():
-    print("lequel voulez vous modifiez ?")
+    print("Quel liste voulez vous modifiez ?")
     print("1 - A faire ", l)
     print("2 - Fait ", liste)
     choice = input()
@@ -36,20 +36,29 @@ def modifier_statut_todo():
             print("Fait ", liste)
 
 def supprimer_todo():
-    print("lequel voulez vous supprimez ?")
-    print("A faire ", l)
+    print("Choisissez une liste pour supprimer un todo")
+    print("1 - A faire ", l)
+    print("2 - Fait ", liste)
     choice = input()
-    print("Etes vous sur ?")
-    print("1 - Oui")
-    print("2 - Non")
-    x = int(input())
-    if x == 1:
-        match choice:
-            case "1": l
-        liste.remove(choice)
-        l.remove(choice)
-        print("A faire ", l)
-        print("Fait ", liste)
+    match choice:
+        case "1":
+            print("lequel voulez vous supprimez ?")
+            print(l)
+            choice = input()
+            match choice:
+                case "1": l
+            l.remove(choice)
+            print("A faire ", l)
+            print("Fait ", liste)
+        case "2":
+            print("lequel voulez vous supprimez ?")
+            print(liste)
+            choice = input()
+            match choice:
+                case "1": liste
+            liste.remove(choice)
+            print("A faire ", l)
+            print("Fait ", liste)
 
 choix = ''
 while choix != 'q':
