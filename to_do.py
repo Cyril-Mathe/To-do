@@ -9,9 +9,33 @@ def creer_todo():
     l.append(input())
 
 def modifier_statut_todo():
-    print('Fonctionnalité "modifier le statut d\'un todo" à venir')
+    print("lequel voulez vous modifiez ?")
+    print("1 - A faire ", l)
+    print("2 - Fait ", liste)
+    choice = input()
+    match choice:
+        case "1":
+            print("Entrez le todo a modifier")
+            print(l)
+            choice = input()
+            match choice:
+                case "1" : l
+            liste.append(choice)
+            l.remove(choice)
+            print("A faire ", l)
+            print("Fait ", liste)
+        case "2" :
+            print("Entrez le todo a modifier")
+            print(liste)
+            choice = input()
+            match choice:
+                case "1" : liste
+            l.append(choice)
+            liste.remove(choice)
+            print("A fair ", l)
+            print("Fait ", liste)
+            print("erorr")
 
-    
 def supprimer_todo():
     print('Fonctionnalité "supprimer un todo" à venir')
 
