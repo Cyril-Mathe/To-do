@@ -37,7 +37,20 @@ def modifier_statut_todo():
             print("erorr")
 
 def supprimer_todo():
-    print('Fonctionnalité "supprimer un todo" à venir')
+    print("lequel voulez vous supprimez ?")
+    print("A faire ", l)
+    choice = input()
+    print("Etes vous sur ?")
+    print("1 - Oui")
+    print("2 - Non")
+    x = int(input())
+    if x == 1:
+        match choice:
+            case "1": l
+        liste.remove(choice)
+        l.remove(choice)
+        print("A faire ", l)
+        print("Fait ", liste)
 
 choix = ''
 while choix != 'q':
