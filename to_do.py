@@ -1,10 +1,12 @@
+l = []
+liste = []
 def lister_todos():
-    print('Fonctionnalité "lister les todos" à venir')
-
+    print("A faire ", l)
+    print("Fait ", liste)
 
 def creer_todo():
-    print('Fonctionnalité "créer un todo" à venir')
-
+    print('Nom de la tache')
+    l.append(input())
 
 def modifier_statut_todo():
     print('Fonctionnalité "modifier le statut d\'un todo" à venir')
